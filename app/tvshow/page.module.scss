@@ -1,0 +1,52 @@
+.back_btn_container {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+
+  z-index: 10;
+  .back_btn {
+    border: 0;
+    background: 0;
+    color: white;
+
+    font-family: var(--tt-norms-pro);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    
+    display: flex;
+    align-content: center;
+    
+    .mobile_icon {
+      display: none;
+    }
+  }
+}
+.middle_section {
+  padding-left: 3vw;
+  padding-right: 3vw;
+
+  margin-bottom: 5vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 720px) {
+  .back_btn_container {
+    .back_btn {
+      .desktop_icon {
+        display: none;
+      }
+      .mobile_icon {
+        display: block;
+      }
+    }
+  }
+  .middle_section {
+    flex-direction: column;
+    gap: 5vw;
+  }
+}

@@ -1,0 +1,142 @@
+.new_slider {
+  font-family: var(--tt-norms-pro);
+  font-style: normal;
+
+  padding-left: 3vw;
+
+  .section_header {
+    display: flex;
+    align-items: center;
+
+    font-family: var(--tt-norms-pro);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+
+    margin-bottom: 2vh;
+  }
+
+  .swiper_container {
+
+    .review_container {
+      height: 17.1vh;
+
+      padding: 20px 20px 14px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .reviewer_and_date {
+          h2 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+
+            color: #FFFFFF;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+
+            color: #BABABA;
+          }
+        }
+
+        .score {
+          padding: 5px 8px;
+          background: linear-gradient(90deg, #F2F452 0%, #B4FD64 64%);
+          border-radius: 8px;
+
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          text-align: center;
+
+          color: #09090C;
+        }
+      }
+
+      .review {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #FFFFFF;
+      }
+      button {
+        border: 0;
+        background: 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #636365;
+        margin-left: 10vw;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .new_slider {
+    .swiper_container {
+      .review_container {
+        height: 20vh;
+
+        .review {
+          font-size: 1vw;
+          line-height: 1.2vw;
+        }
+        button {
+          font-size: 1vw;
+          line-height: 1.2vw;
+
+          margin-left: 5vw;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+.review_container {
+  .top {
+    .reviewer_and_date {
+
+      h2 {
+        font-size: 5vw!important;
+        line-height: 6vw!important;
+      }
+      p {
+        font-size: 2.5vw!important;
+        line-height: 3.5vw!important;
+      }
+    }
+    .score {
+      font-size: 3.5vw!important;
+      line-height: 4.5vw!important;
+      padding-left: 3vw!important;
+      padding-right: 3vw!important;
+    }
+  }
+  .review {
+    font-size: 3.5vw!important;
+    line-height: 4.5vw!important;
+  }
+  button {
+    font-size: 3.5vw!important;
+    line-height: 4.5vw!important;
+    margin-left: 60vw!important;
+  }
+}
+}

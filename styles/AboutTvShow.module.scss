@@ -1,0 +1,79 @@
+.about_tv_show {
+
+  font-family: var(--tt-norms-pro);
+  font-style: normal;
+  font-weight: 400;
+
+  .tabs_btns {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    button {
+      background: 0;
+      border: 0px;
+
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+
+      color: rgba(255, 255, 255, 0.3);
+
+      cursor: pointer;
+    }
+
+    .active_btn {
+      color: #FFFFFF;
+
+      border-bottom: 2px solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(45deg, #F2F452 0%, #B4FD64 64%);
+    }
+  }
+
+  .description {
+    width: 50vw;
+
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+    margin-top: 2vh;
+  }
+
+  .disclaimer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 16px;
+    line-height: 19px;
+
+    color: rgba(255, 255, 255, 0.3);
+
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+  }
+
+  a {
+    color: #636365;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .about_tv_show {
+    width: 90%;
+
+    .tabs_btns {
+      button {
+        font-size: 3vw;
+      }
+    }
+
+    .description {
+      width: 100%;
+      font-size: 3vw;
+      line-height: 3.5vw;
+    }
+  }
+}

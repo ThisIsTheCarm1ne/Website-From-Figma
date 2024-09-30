@@ -1,0 +1,48 @@
+:root {
+  --background: #09090C;
+  --foreground: #ededed;
+}
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: var(--tt-norms-pro);
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: rgba(9, 9, 12, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 8px;
+  color: white!important;
+}
+
+.swiper-button-disabled {
+  display: none!important;
+}
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,142 @@
+.user_score_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  gap: 2vw;
+
+
+  padding: 20px;
+  height: 15vh;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+
+  .user_rating {
+    font-family: var(--font-druk-family);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+
+    background: linear-gradient(90deg, #F2F452 0%, #B4FD64 64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .vr {
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    height: 100%;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .form {
+
+    h3 {
+      font-family: var(--tt-norms-pro);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+
+      color: #FFFFFF;
+    }
+
+    p {
+      font-family: var(--tt-norms-pro);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+
+      color: #BABABA;
+    }
+
+    .numbers_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+
+      .number {
+        font-family: var(--tt-norms-pro);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 36px;
+
+        color: #FFFFFF;
+        border: 0;
+        background: 0;
+
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .user_score_form {
+    gap: 1vw;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+.user_score_form {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 93vw;
+  height: auto;
+
+  gap: 2vh;
+
+  .user_rating {
+    font-size: 8vw;
+  }
+  .vr {
+    display: none;
+  }
+
+  hr {
+    width: 100%;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .form {
+    width: 100%;
+
+    h3 {
+      font-size: 4vw;
+      line-height: 4.3vw;
+      margin-bottom: 1vh;
+    }
+    p {
+      font-weight: 400;
+      font-size: 3vw;
+      line-height: 3vw;
+      margin-bottom: 1vh;
+    }
+    .numbers_container {
+      width: 100%;
+      gap: 7vw!important;
+      justify-content: space-around!important;
+
+      .number {
+        font-size: 10vw!important;
+        line-height: 10vw;
+      }
+      .number:nth-child(n+6):nth-child(-n+10) {
+        display: none;
+      }
+    }
+  }
+}
+}
